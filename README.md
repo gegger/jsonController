@@ -33,7 +33,9 @@ URLRequest properties
 ==============
 
 @property (nonatomic, readonly) NSData *rawData;
+
 if you don't need json structure you can use rawData property to get the raw data from the response
 
 @property (readonly) int httpStatusCode;
+
 show the http status code, what the server gives
