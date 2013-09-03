@@ -8,9 +8,11 @@ How to use
 
 1. with delegate
 
+
   implement URLRequestDelegate in .h file
 
   run query in .m file:
+  
   
   URLRequest *request = [[URLRequest alloc] initWithRequest:[URLRequest getData]];
   
@@ -19,14 +21,18 @@ How to use
 
   implement delegate functions:
   
-  -(void)requestFinished:(NSMutableDictionary *)data;
   
-  -(void)requestFailed:(NSError *)error;
+  @optional -(void)requestFinished:(id)request withData:(NSMutableDictionary *)data;
+
+  @optional -(void)requestFailed:(id)request withError:(NSError *)error;
+
   
   
 2. with block
 
+
   run query in .m file:
+  
   
   URLRequest *request = [[URLRequest alloc] initWithRequest:[URLRequest getVersion]];
   
@@ -38,9 +44,11 @@ How to use
   
 
 
+
 3. without callback
 
   run query in .m file:
+  
   
   [request startWithNoCallback];
   
