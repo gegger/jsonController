@@ -26,7 +26,8 @@ How to use
 
   @optional -(void)requestFailed:(id)request withError:(NSError *)error;
 
-  
+  @optional -(void)requestShouldStart:(id)request;
+
   
 2. with block
 
