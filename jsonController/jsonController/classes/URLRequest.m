@@ -8,6 +8,8 @@
 
 #import "URLRequest.h"
 
+#define SHOW_STATUSBAR_ACTIVITY     1
+
 @interface URLRequest(){
     NSURLRequest *request;
     NSURLConnection *connection;
